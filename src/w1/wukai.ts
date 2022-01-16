@@ -4,7 +4,7 @@ const log = require('ololog').configure({locate: false});
 
 
 const shuffle = (j, k, n) => {
-    const r = _.chain(_.range(0, n)).map().value();
+    const r = _.chain(_.range(j, k)).shuffle().take(n).value();
     log.red(r);
 };
 
