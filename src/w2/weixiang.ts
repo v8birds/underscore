@@ -11,5 +11,5 @@ const originData = [
 
 // 解决方案1
 const data = _.chain(originData).keyBy('code').mapValues('b').value();
-// 解决方案2
+// 解决方案2111
 const data = _.reduce(originData, (pre, cur) => {pre[cur.code] = cur.b; return pre},{});
