@@ -1,9 +1,3 @@
-
-import com.github.underscore.Tuple;
-import com.github.underscore.lodash.U;
-
-import java.util.*;
-
 public static void main(String args[]) {
     List<Map> maps = new ArrayList<>();
     maps.add(U.toMap((new LinkedHashMap<String, String>() { {
@@ -37,5 +31,10 @@ public static void main(String args[]) {
         put("c", "53");
     }}).entrySet()));
 
+    printMap(maps);
+}
+
+
+public static void printMap(List<Map> maps) {
     System.out.println(U.toMap(U.chain(maps).map(item -> Tuple.<String,String>create(item.get("code").toString(), item.get("b").toString())).value()));
 }
