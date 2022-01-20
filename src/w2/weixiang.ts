@@ -1,4 +1,4 @@
-var _ = require('lodash');
+import * as _ from "lodash";
 
 const originData = [
  {code:'a', b:'西瓜', c:'3'},
