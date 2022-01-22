@@ -1,8 +1,8 @@
-package com.kosmos.dubhe.underscore;
+package com.kosmos.dubhe.underscore.w1;
 
 import com.github.underscore.lodash.U;
 
-public class W1WeiXiang {
+public class wWeiXiang {
     public static void main(String args[]) {
         genRandomNum(1, 8, 3);
     }

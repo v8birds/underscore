@@ -1,4 +1,4 @@
-package com.kosmos.dubhe.underscore;
+package com.kosmos.dubhe.underscore.w1;
 
 
 import java.util.Collections;
@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class W1LiPan {
+public class LiPan {
     public static void main(String[] args) {
         shuffle1(0, 9, 3);
 //       shuffle2(0, 9, 3);
