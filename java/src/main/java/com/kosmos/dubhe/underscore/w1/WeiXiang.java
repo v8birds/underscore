@@ -2,7 +2,7 @@ package com.kosmos.dubhe.underscore.w1;
 
 import com.github.underscore.lodash.U;
 
-public class wWeiXiang {
+public class WeiXiang {
     public static void main(String args[]) {
         genRandomNum(1, 8, 3);
     }
