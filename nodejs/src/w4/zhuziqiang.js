@@ -10,3 +10,14 @@ const toArrayByStartEndMonth = (start, end) => {
     console.log([...startYear, ...betweenYear, ...endYear])
 }
 toArrayByStartEndMonth('2019-10', '2020-12')
+
+const toArrayByStartEndMonth111 = (start, end) => {
+        const s = moment(start)
+        const e = moment(end)
+        const r = _.
+        chain(_.range(s.year(), e.year() + 1)).
+        map(year => _.map(_.range(1, 13), month => (year + '-' + month))).flatten().
+        filter(a => moment(a) >= s && moment(a) <= e).
+        value()
+    }
+    toArrayByStartEndMonth111('2018-11', '2020-11')
